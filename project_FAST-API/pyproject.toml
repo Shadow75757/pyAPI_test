@@ -11,8 +11,12 @@ black = "^24.8.0"
 fastapi = "^0.115.0"
 pydantic = "^2.9.2"
 uvicorn = "^0.30.6"
+tree = "^0.2.4"
 
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+start = "my_package.main:start"
